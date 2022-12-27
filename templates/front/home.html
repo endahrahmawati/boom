@@ -1,0 +1,219 @@
+{% extends 'front/base.html' %}
+{% load static  %}
+
+{% block content %}
+<div class="wrapper">
+    <div class="parallax filter-black">
+        <div class="parallax-image">
+            <img src="{% static 'front/img/koreanfood1.jpg' %}" alt="..." />
+        </div>
+        <div class="small-info">
+            <h1>Korean food</h1>
+            <h3>맛있게 드세요
+            (Selamat Makan)</h3>
+        </div>
+    </div>
+
+    <div class="section section-description">
+           <div class="container">
+               <h2 class="section-title">Description</h2>
+
+               <div class="row">
+                    <div class="col-md-6">
+                       <h5>Resto Koreanfood </h5>
+                       <p>
+                        Restoran Korea di Jakarta yang patut dikunjungi adalah Chung Gi Wa.
+                        Restoran ini menyajikan berbagai jenis makanan khas Korea dengan rasa yang autentik nih.
+                        Selain jenis makanan yang variatif, restoran ini ternyata mudah ditemui karena sudah memiliki beberapa cabang.</p>
+
+                   </div>
+                   <div class="col-md-4">
+                        <div id="description-carousel" class="carousel fade" data-ride="carousel">
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <img src="{% static 'front/img/koreaa1.jpg' %}" alt="..." />
+                                </div>
+                                <div class="item">
+                                  <img src="{% static 'front/img/korea1.jpg' %}" alt="..." />
+                                </div>
+                                <div class="item">
+                                  <img src="{% static 'front/img/korea2.jpg' %}" alt="..." />
+                                </div>
+                              </div>
+
+                              <ol class="carousel-indicators">
+                                <li data-target="#description-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#description-carousel" data-slide-to="1"></li>
+                                <li data-target="#description-carousel" data-slide-to="2"></li>
+                              </ol>
+                        </div>
+                   </div>
+                </div>
+
+                <div class="space-50"></div>
+                <hr>
+                <div class="space-50"></div>
+
+                <div>
+                    <div class="col-md-4">
+                        <div id="description-carousel" class="carousel fade" data-ride="carousel">
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <img src="{% static 'front/img/korea3.jpg' %}" alt="..." />
+                                </div>
+                                <div class="item">
+                                  <img src="{% static 'front/img/korea4.jpg' %}" alt="..." />
+                                </div>
+                              </div>
+
+                              <ol class="carousel-indicators">
+                                <li data-target="#description-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#description-carousel" data-slide-to="1"></li>
+                                <li data-target="#description-carousel" data-slide-to="2"></li>
+                              </ol>
+                        </div>
+                   </div>
+                   </div>
+                   <div class="col-md-6">
+                       <h5>Street Food</h5>
+                       <p>
+                        Makanan jalanan di Korea Selatan secara tradisional telah dilihat sebagai bagian dari budaya populer di Korea. Secara historis, 
+                        makanan jalanan terutama termasuk makanan seperti Eomuk, Bungeo-ppang dan Tteok-bokki.</p>
+
+                   </div>
+               </div>
+           </div>
+    </div><!-- section -->
+    
+    <div class="space-50"></div>
+    <div class="section section-testimonials">
+        <div class="container">
+            <h2 class="section-title">What people think...</h2>
+             <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="row">
+                            <div class="col-md-6">
+                                 <div class="card card-plain">
+                                    <div class="content">
+                                        <a target="_blank" href="http://www.creative-tim.com/product/get-shit-done-pro">
+                                            <h4 class="title">I've bought it, and I have to say that it's simply awesome. Creative Tim creates awesome looking templates! :)</h4>
+                                        </a>
+                                         <div class="footer">
+                                            <div class="author">
+                                                <a class="card-link" href="#">
+                                                   <img src="{%static 'front/img/default-avatar.png' %}" alt="..." class="avatar">
+                                                   <span> Radu Tintescu </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end card -->
+                             </div>
+                             <div class="col-md-6">
+                                 <div class="card card-plain">
+                                    <div class="content">
+                                            <h4 class="title">If you like elegant web design, really check out this
+                                                <a target="_blank" href="http://gsdk.creative-tim.com/">link</a>.
+                                                It has just about everything you might need and looks great.
+                                            </h4>
+
+                                         <div class="footer">
+                                            <div class="author">
+                                                <a class="card-link" target="_blank" href="https://twitter.com/tudorvintilescu">
+                                                   <img src="{% static 'front/img/default-avatar.png'%}" alt="..." class="avatar">
+                                                   <span> Alex Paduraru </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end card -->
+                             </div>
+                        </div> <!-- end row -->
+                    </div>
+                    <div class="item">
+                      <div class="row">
+                          <div class="col-md-6">
+                                <div class="card card-plain">
+                                    <div class="content">
+                                        <a target="_blank" href="">
+                                            <h4 class="title">Loved the reusable elements in the 'Get Shit Done Kit'? The PRO version will blow your mind. </h4>
+                                        </a>
+                                         <div class="footer">
+                                            <div class="author">
+                                                <a class="card-link" target="_blank" href="http://www.awwwards.com/">
+                                                   <img src="{% static 'front/img/default-avatar.png' %}" alt="..." class="avatar">
+                                                   <span> Conacel Elena </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end card -->
+                             </div>
+                             <div class="col-md-6">
+                                 <div class="card card-plain">
+                                    <div class="content">
+                                        <a target="_blank" href="http://www.creative-tim.com/product/get-shit-done-pro">
+                                            <h4 class="title">I've bought it, and I have to say that it's simply awesome. Creative Tim creates awesome looking templates! :)</h4>
+                                        </a>
+                                         <div class="footer">
+                                            <div class="author">
+                                                <a class="card-link" target="_blank" href="#">
+                                                   <img src="{% static 'front/img/default-avatar.png' %}" alt="..." class="avatar">
+                                                   <span> Jay Z </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end card -->
+                             </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#testimonials-carousel" data-slide="prev">
+                    <span class="fa fa-angle-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#testimonials-carousel" data-slide="next">
+                    <span class="fa fa-angle-right"></span>
+                  </a>
+            </div>
+        </div>
+    </div>
+
+     <div class="section section-gray section-clients">
+         <div class="container">
+            <div class="row">
+                 <div class="col-md-3">
+                     <a href="" class="btn btn-round btn-fill btn-social btn-facebook">
+                         <i class="fa fa-facebook-square"></i> Facebook
+                     </a>
+                 </div>
+                  <div class="col-md-3">
+                     <a href="" class="btn btn-round btn-fill btn-social btn-twitter">
+                         <i class="fa fa-twitter"></i> Twitter
+                     </a>
+                 </div>
+                  <div class="col-md-3">
+                     <a href="" class="btn btn-round btn-fill btn-social btn-google">
+                         <i class="fa fa-google-plus-square"></i> Google+
+                     </a>
+                 </div>
+                 <div class="col-md-3">
+                     <a href="" class="btn btn-round btn-fill btn-social btn-pinterest">
+                         <i class="fa fa-pinterest"></i> Pinterest
+                     </a>
+                 </div>
+            </div>
+         </div>
+     </div>
+
+
+</div> <!-- wrapper -->
+
+{% endblock content %}
